@@ -109,7 +109,6 @@ nav.scrolled{padding:14px 6%;border-bottom-color:var(--border)}
 }
 .hero-bg-img{
   position:absolute;inset:0;z-index:1;
-  /* Updated Background Image based on request */
   background:url('https://images.unsplash.com/photo-1677442136019-21870e8ed327?w=1920&q=90&fit=crop') center/cover no-repeat;
   opacity:.22;
   filter:saturate(0.5) brightness(0.55);
@@ -456,6 +455,13 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:80px
   font-family:'Space Mono',monospace;cursor:pointer;transition:all .25s;text-transform:uppercase;
 }
 .sp-reset:hover{border-color:var(--blue2);color:var(--text)}
+
+/* ─── BRIGHTNESS TRANSITIONS ─── */
+body,body *{transition:color .35s ease,background-color .35s ease,border-color .35s ease,opacity .35s ease}
+nav,section,.hero,.terminal,.svc-card,.proc-card,.result-card,.testi-card,.contact-form,
+.about-badge-card,.feat,.c-detail,.fg input,.fg select,.fg textarea{
+  transition:color .35s ease,background-color .35s ease,border-color .35s ease !important;
+}
 
 /* ─── LIGHT THEME (White) ─── */
 body.theme-white{
